@@ -21,7 +21,7 @@ namespace ProcessSurveyApp.ViewModels
     {
 
 
-        // временная задержка для логов
+        // временная задержка для лого в
         public static int LogTimeDelay = 1000;
         // директория проекта
         //public static string projectPath = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName).FullName;
