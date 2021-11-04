@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Libs\ImageDB\**" />
+    <EmbeddedResource Remove="Libs\ImageDB\**" />
+    <None Remove="Libs\ImageDB\**" />
+    <Page Remove="Libs\ImageDB\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Libs\ffmpeg\ffmpeg.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Libs\ffmpeg\ffmpeg.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LogDir\" />
+  </ItemGroup>
+
+</Project>
